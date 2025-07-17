@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Wedding Invitation</title>
+  <title>Wedding Invitatio</title>
 
   <!-- Google Fonts – Cormorant Garamond -->
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
@@ -33,6 +33,10 @@
     @font-face {
       font-family: 'Kamavor';
       src: url("Kamavor-NA.otf") format('opentype');
+    }
+    @font-face {
+      font-family: 'Island-Moments';
+      src: url("IslandMoments-Regular.ttf") format('truetype');
     }
     html, body {
       margin: 0;
@@ -104,140 +108,6 @@
       box-shadow: 0 20px 40px rgba(0,0,0,0.1);
     }
 
-    .monogram {
-      font-family: 'Heghnar',serif;
-      font-size: 5rem;
-      font-weight: 700;
-      color: #2c2c2c;
-      line-height: 1;
-      opacity: 0;
-      animation: bounceIn 1s ease-out 0.8s forwards;
-    }
-
-    .monogram div:first-child {
-      font-size: 0.7em;
-      margin-bottom: -10px;
-    }
-
-    .photo-gallery {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      gap: 10px;
-      margin-bottom: 30px;
-      flex-wrap: nowrap;
-    }
-
-    .photo-frame {
-      width: calc(33.333% - 5.5px);
-      border-radius: 8px;
-      position: relative;
-      overflow: hidden;
-      min-height: 300px;
-      background-size: cover;
-      background-repeat: no-repeat;
-      animation: slideDown 0.8s ease-out forwards;
-    }
-
-    .photo-frame:nth-child(1) {
-      background-image: url('https://assets.onecompiler.app/43gpeysj6/43k7xc2vq/1b30c294e034537102f322dccc3838ff.jpg');
-      background-position: left center;
-      animation-delay: 0.2s;
-    }
-
-    .photo-frame:nth-child(2) {
-      background-image: url('https://assets.onecompiler.app/43gpeysj6/43k7xc2vq/1b30c294e034537102f322dccc3838ff.jpg');
-      background-position: center center;
-      margin-top: 40px;
-      margin-bottom: -20px;
-      animation-delay: 0.4s;
-      box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.15);
-    }
-
-    .photo-frame:nth-child(3) {
-      background-image: url('https://assets.onecompiler.app/43gpeysj6/43k7xc2vq/1b30c294e034537102f322dccc3838ff.jpg');
-      background-position: right center;
-      animation-delay: 0.6s;
-    }
-
-    .photo-frame::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: radial-gradient(circle at 30% 40%, rgba(255,220,177,0.3) 0%, transparent 50%),
-                  linear-gradient(45deg, rgba(139,115,85,0.4) 0%, rgba(180,149,111,0.2) 100%);
-      pointer-events: none;
-    }
-
-    .photo-frame:nth-child(2)::after {
-      content: '';
-      position: absolute;
-      top: 20%; left: 10%; right: 10%;
-      height: 2px;
-      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-      pointer-events: none;
-    }
-
-    .photo-frame:nth-child(1)::after {
-      content: '';
-      position: absolute;
-      bottom: 30%; left: 15%; right: 15%;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-      pointer-events: none;
-    }
-
-    @keyframes slideDown {
-      from {
-        transform: translateY(-100%);
-        opacity: 0;
-      }
-      to {
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
-
-    @keyframes bounceIn {
-      0% {
-        opacity: 0;
-        transform: scale(0.3);
-      }
-      50% {
-        opacity: 1;
-        transform: scale(1.1);
-      }
-      100% {
-        opacity: 1;
-        transform: scale(1);
-      }
-    }
-
-    .date-section {
-      text-align: center;
-      padding-bottom: 20px;
-      opacity: 0;
-      animation: slideUp 0.8s ease-out 1.8s forwards;
-    }
-
-    .wedding-date {
-      font-size: 1.5rem;
-      font-weight: 400;
-      letter-spacing: 4px;
-      color: #2c2c2c;
-      margin-bottom: 10px;
-    }
-
-    @keyframes slideUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
 
     @media (max-width: 380px) {
       .content-container {
@@ -255,7 +125,7 @@
     }
 
     .calendar .month {
-      font-family: 'Heghnar';
+      font-family: 'Island-Moments';
       font-weight: bold;
       font-size: 39px;
       margin-bottom: 10px;
@@ -309,7 +179,7 @@
     }
 
     .script {
-      font-family: 'Heghnar';
+      font-family: 'Island-Moments';
       font-size: 50px;
       margin: 40px 0 5px;
     }
@@ -320,8 +190,8 @@
     }
 
     .couple-names {
-      font-family: 'Heghnar';
-      font-size: 40px;
+      font-family: 'Island-Moments';
+      font-size: 45px;
       font-weight: 700;
       text-align: center;
       color: #333;
@@ -361,7 +231,7 @@
 
     .icon-img {
       display: block;
-      margin: 0 auto 25px;
+      margin: -35px auto 25px;
       max-width: 80px;
       max-height: 80px;
       object-fit: contain;
@@ -369,35 +239,55 @@
 
     .ceremony-title, .reception-title {
       font-family: 'Vrdznagir';
-      font-size: 40px;
+      font-size: 35px;
       font-style: italic;
       color: #8b7355;
-      margin-bottom: 10px;
+      margin-top: -25px;
+      margin-bottom: 5px;
       font-weight: 400;
     }
 
     .venue-name {
+      font-family:'Vrdznagir';
       font-size: 20px;
       font-weight: 700;
       color: #333;
       margin-bottom: 5px;
       letter-spacing: 2px;
     }
-
-    .address {
-      font-size: 14px;
-      color: #666;
-      margin-bottom: 20px;
-      line-height: 1.4;
-    }
-
-    .time {
-      font-size: 28px;
+    .hall-name{
+      font-family:'Vrdznagir';
+      font-size: 20px;
       font-weight: 700;
       color: #333;
       margin-bottom: 5px;
+      letter-spacing: 2px;
+    }
+    .address {
+      font-family: 'Vrdznagir';
+      font-size: 18px;
+      font-weight: 700;
+      color: #333;
+      margin-top: 15px;
+      margin-bottom: 5px;
     }
 
+    .time {
+      font-family: 'Vrdznagir';
+      font-size: 18px;
+      font-weight: 700;
+      color: #333;
+      margin-top:15px;
+      margin-bottom: 5px;
+    }
+    .saghmosavank-addres{
+      font-family: 'Vrdznagir';
+        font-size: 18px;
+        font-weight: 700;
+        color: #333;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
     .divider {
       height: 2px;
       background: linear-gradient(90deg, transparent, #d4af37, transparent);
@@ -412,6 +302,7 @@
       display: inline-flex;
       align-items: center;
       gap: 6px;
+      margin-top:35px;
       margin-bottom: 30px;
       cursor: pointer;
     }
@@ -454,7 +345,7 @@
       width: 90%;
       max-width: 700px;
       aspect-ratio: 3 / 4; /* պահպանել լավ հարաբերություն */
-      background-image: url('https://uploads.onecompiler.io/43gpeysj6/43qxr7gz7/erkrord.png');
+      background-image: url('sahak-anush.png');
       background-size: cover;
       background-position: center;
       border-radius: 20px;
@@ -501,7 +392,8 @@
     }
 
     .names {
-      font-family:'Heghnar';
+      word-spacing: 20px; /* բացատի տարածքը */
+      font-family:'Island-Moments';
       font-weight: bold;
       font-size: 30px;
       margin: 10px 0;
@@ -514,6 +406,13 @@
       margin-top: 20px;
       font-weight: bolder;
     }
+    .special-font {
+      font-size: 28px;
+      font-family: 'Island-Moments';
+      font-weight: bold;
+      font-style: normal;
+    }
+
   </style>
 </head>
 <body>
@@ -524,7 +423,9 @@
         <div class="overlay">
           <div class="script">save the date</div>
           <div class="date">18 · 10 · 25</div>
-          <div class="names">SAHAK + ANUSH</div>
+          <div class="names">
+            <span>SAHAK</span> <span>ANUSH</span>
+          </div>
           <div class="footer">FORMAL INVITATION TO FOLLOW</div>
         </div>
       </div>
@@ -565,47 +466,56 @@
       <div class="small-text">FOR THE WEDDING OF</div>
       <div class="couple-names">Sahak & Anush</div>
       <div class="invitation">
-        <img src="arajin.png" alt="Մեր նկարն է" class="full-img" />
+        <img src="erkrord.png" alt="Մեր նկարն է" class="full-img" />
       </div>
       <div class="info">
         <p>Սիրով հրավիրում ենք Ձեզ մեզ հետ կիսելու մեր գեղեցիկ օրը</p>
       </div>
 
-      <div class="invitation">
-        <!-- Church Image -->
-        <img src="ekexeci.png" alt="Եկեղեցի" class="icon-img" />
+        <div class="invitation">
+          <!-- Church Image -->
+          <img src="ekexeci.png" alt="Եկեղեցի" class="icon-img" />
 
-        <div class="ceremony-title">Եկեղեցի</div>
-        <div class="venue-name">Սաղմոսավանք</div>
-       <div class="time">15:00 PM</div>
-
-        <a href="https://maps.app.goo.gl/DKao9MqziYz8zvyM6" target="_blank" rel="noopener noreferrer" class="map-link">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-          </svg>
-          Տեսնել քարտեզում
-        </a>
+          <div class="ceremony-title">Պսակադրությունը տեղի կունենա</div>
+          <div class="venue-name">Սաղմոսավանք վանական համալիրում</div>
+          <div class="time">Ժամը՝ 15:00</div>
+          <div class="saghmosavank-addres"> Հասցե ՝ Արագածոտնի մարզ,<br> գյուղ Սաղմոսավան</div>
+          
+          <a href="https://maps.app.goo.gl/DKao9MqziYz8zvyM6" target="_blank" rel="noopener noreferrer" class="map-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+            </svg>
+            Տեսնել քարտեզում
+          </a>
+        </div>
 
         <div class="divider"></div>
 
-        <!-- Reception Image -->
-        <img src="https://assets.onecompiler.app/43gpeysj6/43keb2mje/champagne-glasses.png" alt="Հյուրասիրություն" class="icon-img" />
+        <div class="invitation">
+          <!-- Reception Image -->
+          <img src="champagne-glasses.png" alt="Հյուրասիրություն" class="icon-img" />
 
-        <div class="reception-title">Ռեստորան</div>
-        <div class="venue-name">Morena White</div>
-        <div class="address">
-          ք. Մասիս, Մխիթար Հերացու փող., 7/8
+          <div class="reception-title">Հարսանյաց հանդիսությունը տեղի կունենա </div>
+          <div class="venue-name">
+            <span class="special-font">"Morena"</span> ռեստորանային համալիրում,
+          </div>
+          <div class="hall-name">
+            <span class="special-font">"Morena White"</span> սրահում
+          </div>
+
+          <div class="time"> Ժամը՝ 18:00 </div>
+
+          <div class="address">
+            Հասցե՝ ք. Մասիս, <br> Մխիթար Հերացու փող., 7/8
+          </div>
+
+          <a href="https://maps.app.goo.gl/scnD6LF87ZNtmAiW9" target="_blank" rel="noopener noreferrer" class="map-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+            </svg>
+            Տեսնել քարտեզում
+          </a>
         </div>
-
-        <div class="time">18:00 PM</div>
-
-        <a href="https://maps.app.goo.gl/scnD6LF87ZNtmAiW9" target="_blank" rel="noopener noreferrer" class="map-link">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-          </svg>
-          Տեսնել քարտեզում
-        </a>
-      </div>
 
       <!-- Final photo block -->
       <div class="invitation">
