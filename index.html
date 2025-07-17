@@ -38,6 +38,10 @@
       font-family: 'Island-Moments';
       src: url("IslandMoments-Regular.ttf") format('truetype');
     }
+    @font-face {
+      font-family: 'Margharita';
+      src: url("Margharita\ Italic.ttf") format('truetype');
+    }
     html, body {
       margin: 0;
       padding: 0;
@@ -378,35 +382,35 @@
       margin-bottom: 10px;
       opacity: 0.9;
     }
-
+    .script-wrapper {
+      transform: translateY(240px);
+    }
     .script {
-      font-family: 'Heghnar';
+      font-family: 'Island-Moments';
       font-size: 56px;
       margin: 10px 0;
       letter-spacing: 2px;
+      margin-top: 25px;
     }
 
     .date {
       font-size: 42px;
-      letter-spacing: 12px;
+      letter-spacing: 0;
       margin: 10px 0;
       font-weight: 600;
     }
 
-    .names {
-      word-spacing: 20px; /* բացատի տարածքը */
-      font-family:'Island-Moments';
-      font-weight: bold;
-      font-size: 30px;
-      margin: 10px 0;
-      letter-spacing: 3px;
+    .names-wrapper {
+      transform: translateY(250px); /* սա միայն անունների բլոկն է շարժում */
     }
 
-    .footer {
-      font-size: 12px;
-      opacity: 0.85;
-      margin-top: 20px;
-      font-weight: bolder;
+    .names {
+      word-spacing: 20px;
+      font-family: 'Island-Moments';
+      font-weight: bold;
+      font-size: 40px;
+      margin: 0; /* սա պետք է զրո պահել, որ չհզորացնի շարժը */
+      letter-spacing: 3px;
     }
     .special-font {
       font-size: 28px;
@@ -414,23 +418,52 @@
       font-weight: bold;
       font-style: normal;
     }
+    .fancy-date {
+      font-family: 'Island-Moments'; /* կամ մատակարարված նմանատիպ calligraphy font */
+      color: #fff;
+      text-align: left;
+      margin-top: 260px;
+      line-height: 1;
+    }
+
+    .fancy-date .line1 {
+      font-family: 'Island-Moments';
+      font-size: 72px;
+      word-spacing: 15px;
+      
+    }
+
+    .fancy-date .line2 {
+      font-size: 75px;
+      margin-top: -25px;
+      transform: translateX(97px); /* դրական թիվ՝ աջ տանելու համար */
+      font-family: 'Margharita';
+    }
 
   </style>
 </head>
 <body>
   <div class="main-content">
     <div class="content-container">
-
       <div class="save-the-date">
         <div class="overlay">
-          <div class="script">save the date</div>
-          <div class="date">18 · 10 · 25</div>
-          <div class="names">
-            <span>SAHAK</span> <span>ANUSH</span>
+          <div class="script-wrapper">
+            <div class="script">save the date</div>
           </div>
-          <div class="footer">FORMAL INVITATION TO FOLLOW</div>
+
+          <div class="names-wrapper">
+            <div class="names">
+              <span>SAHAK</span> <span>ANUSH</span>
+            </div>
+          </div>
+
+          <div class="fancy-date">
+            <div class="line1">October 18</div>
+            <div class="line2">2025</div>
+          </div>
         </div>
       </div>
+
       <div class="calendar">
         <div class="month">October</div>
         <div class="weekdays">
