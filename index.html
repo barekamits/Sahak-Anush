@@ -79,6 +79,8 @@
       justify-content: center;
       align-items: center;
       margin: 0 auto;
+      padding: 20px;
+      box-sizing: border-box;
     }
 
     @media (max-width: 480px) {
@@ -378,7 +380,7 @@
       position: relative;
       width: 90%;
       max-width: 700px;
-      aspect-ratio: 3 / 4; /* պահպանել լավ հարաբերություն */
+      aspect-ratio: 3 / 4;
       background-image: url('sahak-anush.png');
       background-size: cover;
       background-position: center center;
@@ -387,14 +389,6 @@
       box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
       margin: 0 auto;
       display: block;
-    }
-
-    .save-the-date-container {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto;
     }
 
     .overlay {
@@ -419,18 +413,6 @@
       font-size: 12px;
       margin-bottom: 10px;
       opacity: 0.9;
-    }
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.4);
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-      transition: opacity 0.8s ease;
-      z-index: 10;
     }
 
     .overlay.hidden {
@@ -522,6 +504,10 @@
       
       .overlay {
         padding: 15px;
+      }
+      
+      .save-the-date-container {
+        padding: 10px;
       }
     }
 
