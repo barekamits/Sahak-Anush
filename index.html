@@ -131,9 +131,14 @@
     }
 
     .calendar {
-      margin-top: 30px;
+      margin: 30px auto;
       font-size: 18px;
       letter-spacing: 1px;
+      width: 100%;
+      max-width: 420px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .calendar .month {
@@ -147,6 +152,7 @@
     .calendar .weekdays {
       display: grid;
       grid-template-columns: repeat(7, 1fr);
+      width: 100%;
       max-width: 420px;
       margin: 0 auto 10px;
       text-align: center;
@@ -161,6 +167,7 @@
     .calendar .dates {
       display: grid;
       grid-template-columns: repeat(7, 1fr);
+      width: 100%;
       max-width: 420px;
       margin: 0 auto;
     }
@@ -382,6 +389,14 @@
       display: block;
     }
 
+    .save-the-date-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+
     .overlay {
       position: absolute;
       top: 0;
@@ -528,20 +543,22 @@
 </head>
 <body>
   <div class="main-content">
-        <div class="save-the-date">
-          <div class="overlay">
-            <div class="tagline-wrapper">
-              <div class="tagline">WE DECIDED ON FOREVER</div>
-            </div>
+    <div class="save-the-date-container">
+      <div class="save-the-date">
+        <div class="overlay">
+          <div class="tagline-wrapper">
+            <div class="tagline">WE DECIDED ON FOREVER</div>
+          </div>
 
-            <div class="names-wrapper">
-              <div class="names-heading">
-                <h1>S & A</h1>
-              </div>
+          <div class="names-wrapper">
+            <div class="names-heading">
+              <h1>S & A</h1>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
 
       <div class="calendar">
         <div class="month">October</div>
