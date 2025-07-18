@@ -129,6 +129,7 @@
     }
 
     .calendar .month {
+      text-align: center;
       font-family: 'Island-Moments';
       font-weight: bold;
       font-size: 39px;
@@ -181,14 +182,19 @@
       font-weight: bold;
       font-size: 16px;
     }
-
+    .script-wrapper {
+      margin-top: 80px; /* կարգավորիր ըստ քո ֆոնի */
+      font-size: 35px;
+    }
     .script {
+      text-align: center;
       font-family: 'Island-Moments';
-      font-size: 50px;
-      margin: 40px 0 5px;
+      font-size: 55px;
+      margin: 20px 0 5px;
     }
 
     .small-text {
+      text-align: center;
       font-size: 12px;
       letter-spacing: 1px;
     }
@@ -204,7 +210,7 @@
     .info {
       font-family:'Vrdznagir';
       font-size: 22px;
-      
+      text-align:center;
       letter-spacing: 1px;
       line-height: 1.6;
     }
@@ -382,84 +388,75 @@
       margin-bottom: 10px;
       opacity: 0.9;
     }
-    .script-wrapper {
-      transform: translateY(190px);
-    }
-    .script {
-      font-family: 'Island-Moments';
-      font-size: 56px;
-      margin: 10px 0;
-      letter-spacing: 2px;
-      margin-top: 25px;
-    }
-
-    .date {
-      font-size: 42px;
-      letter-spacing: 0;
-      margin: 10px 0;
-      font-weight: 600;
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.4);
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding-top: 10em;
+      transition: opacity 0.8s ease;
+      z-index: 10;
     }
 
-    .names-wrapper {
-      transform: translateY(200px); /* սա միայն անունների բլոկն է շարժում */
-    }
-
-    .names {
-      word-spacing: 20px;
+        .overlay.hidden {
+          opacity: 0;
+          pointer-events: none;
+          display: none;
+        }
+    .overlay h1 {
       font-family: 'Island-Moments';
-      font-weight: bold;
-      font-size: 35px;
-      margin: 0; /* սա պետք է զրո պահել, որ չհզորացնի շարժը */
-      letter-spacing: 3px;
-    }
-    .special-font {
-      font-size: 28px;
-      font-family: 'Island-Moments';
-      font-weight: bold;
-      font-style: normal;
-    }
-    .fancy-date {
-      font-family: 'Island-Moments'; /* կամ մատակարարված նմանատիպ calligraphy font */
-      color: #fff;
-      text-align: left;
-      margin-top: 200px;
-      line-height: 1;
-    }
-
-    .fancy-date .line1 {
-      font-family: 'Island-Moments';
-      font-size: 72px;
-      word-spacing: 15px;
+      font-size: 190px;
+      text-align: center;
+      margin: 0;
+      background: url('errord.png') no-repeat center center/cover;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+      transform: translateY(340px);
+      
       
     }
 
-    .fancy-date .line2 {
-      font-size: 75px;
-      margin-top: -25px;
-      transform: translateX(97px); /* դրական թիվ՝ աջ տանելու համար */
+        .main-content h1 {
+          margin-top: 290px;
+          font-family: 'Island-Moments';
+          font-size:140px;
+          text-align: center;
+          margin: 0;
+          color: black;
+        }
+    .tagline-wrapper {
+      position: relative;
+      top: 369px; /* իջեցրու ինչքան ուզում ես */
+    }
+
+    .tagline {
       font-family: 'Island-Moments';
+      font-size: 28px;
+      letter-spacing: 2px;
+      text-align: center;
+      color: white;
     }
 
   </style>
 </head>
 <body>
   <div class="main-content">
-    <div class="content-container">
-      <div class="save-the-date">
-        <div class="overlay">
-          <div class="script-wrapper">
-            <div class="script">save the date</div>
-          </div>
-
-          <div class="names-wrapper">
-            <div class="names">
-              <span>SAHAK</span> <span>ANUSH</span>
+        <div class="save-the-date">
+          <div class="overlay"> <!-- Մենակ սա թող overlay -->
+            <div class="tagline-wrapper">
+              <div class="tagline">WE DECIDED ON FOREVER</div>
             </div>
-          </div>
 
-          <div class="fancy-date">
-            <div class="line1">October 18</div>
-            <div class="line2">2025</div>
+            <div class="names-wrapper">
+              <div class="names-heading">
+                <h1>S & A</h1>
+              </div>
+            </div>
           </div>
         </div>
       </div>
