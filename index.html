@@ -494,6 +494,7 @@
       color: transparent;
       white-space: nowrap;
     }
+    
     /* Mobile responsive styles */
     @media (max-width: 768px) {
       .overlay h1, .names-heading h1 {
@@ -542,18 +543,24 @@
         align-items: center;
         width: 100%;
       }
+
+      /* Fixed mobile image styles */
+      .full-img,
+      .icon-img,
+      .second-img {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        display: block;
+      }
+      
+      .invitation {
+        margin: 10px auto;
+        padding: 40px 20px;
+        width: 90%;
+        max-width: 90%;
+      }
     }
-    @media (max-width: 480px) {
-  .full-img,
-  .icon-img,
-  .second-img {
-    display: block;
-    max-width: 100%;
-    width: 90%;
-    margin-left:540px;
-    margin-right: 540px;
-  }
-}
 
     @media (max-width: 360px) {
       .overlay h1, .names-heading h1 {
