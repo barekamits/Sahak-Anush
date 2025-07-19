@@ -111,10 +111,17 @@
     .names-heading h1 {
       font-family: 'Sasuntsi-Regular', serif;
       font-size: clamp(60px, 15vw, 120px);
-      color: white;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
       margin: 0;
       letter-spacing: 2px;
+      background-image: url('sahak-anush.png');
+      background-repeat: no-repeat;
+      background-size: 300% 380%;
+      background-position: center 45%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+      white-space: nowrap;
     }
 
     /* Calendar section - mobile centered */
@@ -345,7 +352,24 @@
       max-width: 200px;
     }
 
-    /* Extra small mobile devices */
+    /* Mobile responsive styles for background text effect */
+    @media (max-width: 768px) {
+      .names-heading h1 {
+        background-size: 250% 350%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .names-heading h1 {
+        background-size: 300% 400%;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .names-heading h1 {
+        background-size: 350% 450%;
+      }
+    }
     @media (max-width: 360px) {
       .main-content {
         padding: 5px;
