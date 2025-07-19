@@ -1,31 +1,33 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="hy">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Wedding Invitatio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Sahak & Anush - Wedding Invitation</title>
+  
   <!-- Open Graph / Facebook -->
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Sahak & Anush - Wedding Invitation" />
-<meta property="og:description" content="Save the date - October 18th. Join us for our special day!" />
-<meta property="og:image" content="socialmedia.png" />
-<meta property="og:url" content="sahak-anush.barekamits.am" />
-<meta property="og:site_name" content="Wedding Invitation" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sahak & Anush - Wedding Invitation" />
+  <meta property="og:description" content="Save the date - October 18th. Join us for our special day!" />
+  <meta property="og:image" content="socialmedia.png" />
+  <meta property="og:url" content="sahak-anush.barekamits.am" />
+  <meta property="og:site_name" content="Wedding Invitation" />
 
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Sahak & Anush - Wedding Invitation" />
-<meta name="twitter:description" content="Save the date - October 18th. Join us for our special day!" />
-<meta name="twitter:image" content="socialmedia.png" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sahak & Anush - Wedding Invitation" />
+  <meta name="twitter:description" content="Save the date - October 18th. Join us for our special day!" />
+  <meta name="twitter:image" content="socialmedia.png" />
 
-<!-- General Meta -->
-<meta name="description" content="Save the date - October 18th. Join us for our special day!" />
+  <!-- General Meta -->
+  <meta name="description" content="Save the date - October 18th. Join us for our special day!" />
 
-  <!-- Google Fonts – Cormorant Garamond -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
 
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Allura&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Great+Vibes&display=swap');
+    /* Font faces */
     @font-face {
       font-family: 'Sasuntsi-Regular';
       src: url('Sasuntsi-Regular.ttf') format('truetype');
@@ -35,244 +37,204 @@
       src: url('Vrdznagir.otf') format('opentype');
     }
     @font-face {
-      font-family: 'Heghnar';
-      src: url('HEGHNAR.TTF') format('truetype');
-    }
-    @font-face {
-      font-family: 'Kotayk-Italic';
-      src: url('Kotayk-Italic.ttf') format('truetype');
-    }
-    @font-face {
-      font-family: 'Kotayk-Regular';
-      src: url('Kotayk-Regular.ttf') format('truetype');
-    }
-    @font-face {
-      font-family: 'Kamavor';
-      src: url("Kamavor-NA.otf") format('opentype');
-    }
-    @font-face {
       font-family: 'Island-Moments';
       src: url("IslandMoments-Regular.ttf") format('truetype');
     }
-    @font-face {
-      font-family: 'Margharita';
-      src: url("Margharita\ Italic.ttf") format('truetype');
+
+    /* Mobile-first reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     html, body {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
       overflow-x: hidden;
-      max-width: 100vw;
+      scroll-behavior: smooth;
     }
 
     body {
-      margin: 0;
-      padding: 0;
       font-family: 'Cormorant Garamond', serif;
       background: white;
-      color: black;
-      overflow-x: hidden;
+      color: #333;
+      line-height: 1.6;
+      font-size: 16px;
     }
 
+    /* Main container - mobile-centered */
     .main-content {
       width: 100%;
-      overflow: hidden;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      font-size: 1.2em;
+      justify-content: flex-start;
+      padding: 10px;
       text-align: center;
-      padding: 0;
-      z-index: 1;
-      min-height: 100vh;
     }
 
+    /* Save the date section - mobile optimized */
     .save-the-date-container {
       width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto;
-      padding: 20px;
-      box-sizing: border-box;
+      max-width: 350px;
+      margin: 20px auto;
+      padding: 0 15px;
     }
 
-    @media (max-width: 480px) {
-      .main-content {
-        font-size: 1em;
-        padding: 0.5em;
-      }
-      
-      .save-the-date-container {
-        padding: 10px;
-      }
-    }
-
-    .main-content h1 {
-      font-family: 'Sasuntsi-Regular';
-      font-size: 2.5em;
-      text-align: center;
-      margin: 0;
-      color: black;
-    }
-
-    @media (max-width: 420pxh) {
-      .content-container {
-        max-width: 100%;
-        padding: 10px;
-      }
-    }
-
-    .header {
-      text-align: center;
-      padding: 30px 0 40px;
+    .save-the-date {
       position: relative;
-    }
-
-    .header-img {
       width: 100%;
-      max-width: 400px;
-      height: auto;
+      aspect-ratio: 3/4;
+      background-image: url('removed-text.png');
+      background-size: cover;
+      background-position: center;
       border-radius: 15px;
-      object-fit: cover;
-      display: block;
-      margin: 20px auto 0;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
     }
 
-
-    @media (max-width: 380px) {
-      .content-container {
-        padding: 10px;
-      }
-      .monogram {
-        font-size: 4rem;
-      }
-    }
-
-    .calendar {
-      margin: 30px auto;
-      font-size: 18px;
-      letter-spacing: 1px;
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
-      max-width: 420px;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3);
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      align-items: flex-end;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .names-heading h1 {
+      font-family: 'Sasuntsi-Regular', serif;
+      font-size: clamp(60px, 15vw, 120px);
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      margin: 0;
+      letter-spacing: 2px;
+    }
+
+    /* Calendar section - mobile centered */
+    .calendar {
+      width: 100%;
+      max-width: 320px;
+      margin: 30px auto;
+      padding: 0 15px;
     }
 
     .calendar .month {
-      text-align: center;
-      font-family: 'Island-Moments';
+      font-family: 'Island-Moments', cursive;
+      font-size: clamp(32px, 8vw, 40px);
       font-weight: bold;
-      font-size: 39px;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
+      color: #8b7355;
     }
 
     .calendar .weekdays {
       display: grid;
       grid-template-columns: repeat(7, 1fr);
-      width: 100%;
-      max-width: 420px;
-      margin: 0 auto 10px;
-      text-align: center;
+      gap: 2px;
+      margin-bottom: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #666;
     }
 
     .calendar .weekdays > div {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      padding: 8px 4px;
+      text-align: center;
     }
 
     .calendar .dates {
       display: grid;
       grid-template-columns: repeat(7, 1fr);
-      width: 100%;
-      max-width: 420px;
-      margin: 0 auto;
+      gap: 2px;
     }
 
     .dates > div {
+      aspect-ratio: 1;
       display: flex;
       align-items: center;
       justify-content: center;
-      aspect-ratio: 1 / 1;
-      text-align: center;
+      padding: 8px;
+      font-size: 16px;
+      font-weight: 500;
     }
 
+    /* Heart wrapper for special date */
     .heart-wrapper {
       position: relative;
       width: 100%;
       height: 100%;
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
     }
 
     .heart-svg {
       position: absolute;
-      width: 80%;
-      height: 80%;
+      width: 85%;
+      height: 85%;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      pointer-events: none;
     }
 
-    .heart-text {
+    .heart-wrapper > div {
       position: relative;
       z-index: 1;
       font-weight: bold;
-      font-size: 16px;
+      color: #dc143c;
+      font-size: 18px;
     }
-    .script-wrapper {
-      margin-top: 80px; /* կարգավորիր ըստ քո ֆոնի */
-      font-size: 35px;
-    }
+
+    /* Text sections */
     .script {
-      text-align: center;
-      font-family: 'Island-Moments';
-      font-size: 55px;
-      margin: 20px 0 5px;
+      font-family: 'Island-Moments', cursive;
+      font-size: clamp(36px, 8vw, 48px);
+      margin: 20px 0 10px;
+      color: #8b7355;
     }
 
     .small-text {
-      text-align: center;
       font-size: 12px;
-      letter-spacing: 1px;
+      letter-spacing: 1.5px;
+      margin-bottom: 10px;
+      color: #666;
+      text-transform: uppercase;
     }
 
     .couple-names {
-      font-family: 'Island-Moments';
-      font-size: 45px;
+      font-family: 'Island-Moments', cursive;
+      font-size: clamp(36px, 10vw, 48px);
       font-weight: 700;
-      text-align: center;
       color: #333;
+      margin: 15px 0 25px;
     }
 
     .info {
-      font-family:'Vrdznagir';
-      font-size: 22px;
-      text-align:center;
-      letter-spacing: 1px;
+      font-family: 'Vrdznagir', serif;
+      font-size: clamp(18px, 4vw, 22px);
       line-height: 1.6;
+      color: #333;
+      margin: 20px 0;
+      padding: 0 15px;
     }
 
+    /* Invitation cards - mobile optimized */
     .invitation {
       background: white;
       width: 100%;
-      max-width: 400px;
-      padding: 60px 40px;
-      text-align: center;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+      max-width: 350px;
+      margin: 25px auto;
+      padding: 40px 25px;
       border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      text-align: center;
       position: relative;
-      overflow: hidden;
-      margin: 20px auto;
-      box-sizing: border-box;
     }
 
     .invitation::before {
@@ -283,296 +245,145 @@
       right: 0;
       height: 3px;
       background: linear-gradient(90deg, #dc143c, #ff6b6b, #dc143c);
+      border-radius: 15px 15px 0 0;
     }
 
     .icon-img {
-      display: block;
-      margin: -35px auto 25px;
-      max-width: 80px;
-      max-height: 80px;
+      width: clamp(60px, 15vw, 80px);
+      height: auto;
+      margin: -25px auto 20px;
       object-fit: contain;
     }
 
     .ceremony-title, .reception-title {
-      font-family: 'Vrdznagir';
-      font-size: 35px;
+      font-family: 'Vrdznagir', serif;
+      font-size: clamp(24px, 6vw, 32px);
       font-style: italic;
       color: #8b7355;
-      margin-top: -25px;
-      margin-bottom: 5px;
+      margin-bottom: 15px;
       font-weight: 400;
+      line-height: 1.3;
     }
 
-    .venue-name {
-      font-family:'Vrdznagir';
-      font-size: 20px;
+    .venue-name, .hall-name {
+      font-family: 'Vrdznagir', serif;
+      font-size: clamp(16px, 4vw, 20px);
       font-weight: 700;
       color: #333;
-      margin-bottom: 5px;
-      letter-spacing: 2px;
-    }
-    .hall-name{
-      font-family:'Vrdznagir';
-      font-size: 20px;
-      font-weight: 700;
-      color: #333;
-      margin-bottom: 5px;
-      letter-spacing: 2px;
-    }
-    .address {
-      font-family: 'Vrdznagir';
-      font-size: 18px;
-      font-weight: 700;
-      color: #333;
-      margin-top: 15px;
-      margin-bottom: 5px;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
     }
 
-    .time {
-      font-family: 'Vrdznagir';
-      font-size: 18px;
+    .time, .address, .saghmosavank-addres {
+      font-family: 'Vrdznagir', serif;
+      font-size: clamp(14px, 3.5vw, 18px);
       font-weight: 700;
       color: #333;
-      margin-top:15px;
-      margin-bottom: 5px;
-    }
-    .saghmosavank-addres{
-      font-family: 'Vrdznagir';
-        font-size: 18px;
-        font-weight: 700;
-        color: #333;
-        margin-top: 15px;
-        margin-bottom: 5px;
-    }
-    .divider {
-      height: 2px;
-      background: linear-gradient(90deg, transparent, #dc143c, transparent);
-      margin: 40px 0;
+      margin: 10px 0;
+      line-height: 1.4;
     }
 
-    a.map-link {
+    .map-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
       text-decoration: none;
       color: #dc143c;
       font-weight: 600;
-      font-size: 14px;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      margin-top:35px;
-      margin-bottom: 30px;
-      cursor: pointer;
+      font-size: clamp(12px, 3vw, 14px);
+      margin-top: 20px;
+      padding: 8px 12px;
+      border: 1px solid #dc143c;
+      border-radius: 6px;
+      transition: all 0.3s ease;
     }
 
-    a.map-link svg {
-      fill: #dc143c;
+    .map-link:hover {
+      background: #dc143c;
+      color: white;
+    }
+
+    .map-link svg {
       width: 16px;
       height: 16px;
+      fill: currentColor;
     }
 
+    /* Images */
     .full-img {
       width: 100%;
       height: auto;
-      border-radius: 15px;
+      border-radius: 10px;
       object-fit: cover;
-      display: block;
-      margin: 0 auto;
+      margin-bottom: 15px;
     }
 
     .closing-text {
-      font-family: 'Vrdznagir';
-      font-size: 35px;
+      font-family: 'Vrdznagir', serif;
+      font-size: clamp(24px, 6vw, 32px);
       font-style: italic;
       color: #8b7355;
-      margin-top: 20px;
+      margin-top: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
     }
 
     .heart-outline {
-      vertical-align: middle;
-      margin-left: 8px;
-    }
-    .second-img {
-      width: 100%;
-      height: auto;
-      border-radius: 15px;
-      object-fit: cover;
-      display: block;
-    }
-    .save-the-date {
-      position: relative;
-      width: 90%;
-      max-width: 400px;
-      aspect-ratio: 3 / 4;
-      background-image: url('removed-text.png');
-      background-size: cover;
-      background-position: center center;
-      border-radius: 20px;
-      overflow: hidden;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-      margin: 0 auto;
-      display: block;
+      width: 24px;
+      height: 24px;
+      transform: rotate(10deg);
     }
 
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      background: rgba(0, 0, 0, 0.25);
-      border-radius: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .location {
-      letter-spacing: 2px;
-      font-size: 12px;
-      margin-bottom: 10px;
-      opacity: 0.9;
+    .divider {
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #dc143c, transparent);
+      margin: 30px auto;
+      width: 80%;
+      max-width: 200px;
     }
 
-    .overlay.hidden {
-      opacity: 0;
-      pointer-events: none;
-      display: none;
-    }
-
-    .overlay h1 {
-      font-family: 'Sasuntsi';
-      font-size: 190px;
-      text-align: center;
-      background-image: url('https://uploads.onecompiler.io/43gpeysj6/43qyhvg5v/sahak-anush.png');
-      background-repeat: no-repeat;
-      background-size: 300% 350%;
-      background-position: center 40%;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      color: transparent;
-    }
-
-    .main-content h1 {
-      margin-top: 290px;
-      font-family: 'Sasuntsi';
-      font-size:270px;
-      text-align: center;
-      margin: 0;
-      color: black;
-    }
-
-    .names-wrapper {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-      padding-bottom: 80px;
-    }
-
-    .names-heading {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .names-heading h1 {
-      font-family: 'Sasuntsi';
-      font-size: 190px;
-      text-align: center;
-      margin: 0;
-      background-image: url('sahak-anush.png');
-      background-repeat: no-repeat;
-      background-size: 400% 380%;
-      background-position: center 45%;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      color: transparent;
-      white-space: nowrap;
-    }
-    /* Mobile responsive styles */
-    @media (max-width: 768px) {
-      .overlay h1, .names-heading h1 {
-        font-size: 120px;
-        background-size: 250% 350%;
-      }
-    
-      .save-the-date {
-        width: 90%;
-        max-width: 350px;
-        aspect-ratio: 3 / 4.5;
-        margin: 0 auto;
-      }
-      
-      .save-the-date-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        padding: 20px 10px;
-        box-sizing: border-box;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .overlay h1, .names-heading h1 {
-        font-size: 80px;
-        background-size: 300% 400%;
-      }
-      
-      .save-the-date {
-        background-position: center center;
-        width: 100%;
-        max-width: 340px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 0 20px;
-        box-sizing: border-box;
-      }
-      
-      .overlay {
-        padding: 15px;
-      }
-      
-      .save-the-date-container {
-        padding: 15px 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-      }
-    }
-
-
+    /* Extra small mobile devices */
     @media (max-width: 360px) {
-      .overlay h1, .names-heading h1 {
-        font-size: 60px;
-        background-size: 350% 450%;
-      }
-      
-      .save-the-date {
-        width: 90%;
-        max-width: 300px;
-        margin: 0 auto;
+      .main-content {
+        padding: 5px;
       }
       
       .save-the-date-container {
-        padding: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
+        padding: 0 10px;
+      }
+      
+      .invitation {
+        padding: 30px 20px;
+      }
+      
+      .calendar {
+        max-width: 280px;
       }
     }
 
+    /* Larger mobile devices */
+    @media (min-width: 768px) {
+      .main-content {
+        padding: 20px;
+      }
+      
+      .save-the-date-container {
+        max-width: 400px;
+      }
+      
+      .invitation {
+        max-width: 400px;
+        padding: 50px 35px;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="main-content">
+    <!-- Save the Date Hero Section -->
     <div class="save-the-date-container">
       <div class="save-the-date">
         <div class="overlay">
@@ -584,105 +395,89 @@
         </div>
       </div>
     </div>
-  </div>
 
-      <div class="calendar">
-        <div class="month">October</div>
-        <div class="weekdays">
-          <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
-        </div>
-        <div class="dates">
-          <div>12</div>
-          <div>13</div>
-          <div>14</div>
-          <div>15</div>
-          <div>16</div>
-          <div>17</div>
-          <div>
-            <div class="heart-wrapper">
-              <svg class="heart-svg" viewBox="0 0 60 60">
-                <path d="M30 52
-                  C10 35, 5 20, 20 15
-                  A10 10 0 0 1 30 20
-                  A10 10 0 0 1 40 15
-                  C55 20, 50 35, 30 52
-                  Z"
-                  fill="none"
-                  stroke="#dc143c"
-                  stroke-dasharray="2,3"
-                  stroke-width="1"
-                />
-              </svg>
-              <div>18</div>
-            </div>
-          </div>
-        </div>
+    <!-- Calendar Section -->
+    <div class="calendar">
+      <div class="month">October</div>
+      <div class="weekdays">
+        <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
       </div>
-
-      <div class="script">save the date</div>
-      <div class="small-text">FOR THE WEDDING OF</div>
-      <div class="couple-names">Sahak & Anush</div>
-      <div class="invitation">
-        <img src="erkrord.png" alt="Մեր նկարն է" class="full-img" />
-      </div>
-      <div class="info">
-        <p>Սիրով հրավիրում ենք Ձեզ՝ մեզ հետ կիսելու մեր գեղեցիկ օրը</p>
-      </div>
-
-        <div class="invitation">
-          <!-- Church Image -->
-          <img src="ekexeci.png" alt="Եկեղեցի" class="icon-img" />
-
-          <div class="ceremony-title">Պսակադրությունը տեղի կունենա</div>
-          <div class="venue-name">Սաղմոսավանք վանական համալիրում</div>
-          <div class="time">Ժամը՝ 15:00</div>
-          <div class="saghmosavank-addres"> Հասցե ՝ Արագածոտնի մարզ,<br> գյուղ Սաղմոսավան</div>
-          
-          <a href="https://maps.app.goo.gl/DKao9MqziYz8zvyM6" target="_blank" rel="noopener noreferrer" class="map-link">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+      <div class="dates">
+        <div></div><div></div><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div>
+        <div>6</div><div>7</div><div>8</div><div>9</div><div>10</div><div>11</div><div>12</div>
+        <div>13</div><div>14</div><div>15</div><div>16</div><div>17</div>
+        <div>
+          <div class="heart-wrapper">
+            <svg class="heart-svg" viewBox="0 0 60 60">
+              <path d="M30 52 C10 35, 5 20, 20 15 A10 10 0 0 1 30 20 A10 10 0 0 1 40 15 C55 20, 50 35, 30 52 Z"
+                    fill="none" stroke="#dc143c" stroke-dasharray="2,3" stroke-width="1.5"/>
             </svg>
-            Տեսնել քարտեզում
-          </a>
-        </div>
-
-        <div class="divider"></div>
-
-        <div class="invitation">
-          <!-- Reception Image -->
-          <img src="champagne-glasses.png" alt="Հյուրասիրություն" class="icon-img" />
-
-          <div class="reception-title">Հարսանյաց հանդիսությունը տեղի կունենա </div>
-          <div class="venue-name">
-            <span class="special-font">"Morena"</span> ռեստորանային համալիրում,
+            <div>18</div>
           </div>
-          <div class="hall-name">
-            <span class="special-font">"Morena White"</span> սրահում
-          </div>
-
-          <div class="time"> Ժամը՝ 18:00 </div>
-
-          <div class="address">
-            Հասցե՝ ք. Մասիս, <br> Մխիթար Հերացու փող., 7/8
-          </div>
-
-          <a href="https://maps.app.goo.gl/scnD6LF87ZNtmAiW9" target="_blank" rel="noopener noreferrer" class="map-link">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-            </svg>
-            Տեսնել քարտեզում
-          </a>
         </div>
+        <div>19</div>
+      </div>
+    </div>
 
-      <!-- Final photo block -->
-      <div class="invitation">
-        <img src="removed-text-2.png" alt="Մեր նկարն է" class="full-img" />
-        <div class="closing-text">
-          Սիրով սպասում ենք Ձեզ 
-          <svg class="heart-outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#dc143c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="transform: rotate(10deg);">
-            <path d="M20.84 4.61c-1.54-1.3-3.77-1.3-5.31 0L12 8.09l-3.53-3.48c-1.54-1.3-3.77-1.3-5.31 0-1.55 1.31-1.55 3.43 0 4.74L12 21.35l8.84-11.99c1.55-1.31 1.55-3.43 0-4.75z"/>
-          </svg>
-        </div>
+    <!-- Main Text -->
+    <div class="script">save the date</div>
+    <div class="small-text">FOR THE WEDDING OF</div>
+    <div class="couple-names">Sahak & Anush</div>
+
+    <!-- Couple Photo -->
+    <div class="invitation">
+      <img src="erkrord.png" alt="Sahak & Anush" class="full-img" />
+    </div>
+
+    <!-- Welcome Message -->
+    <div class="info">
+      <p>Սիրով հրավիրում ենք Ձեզ՝ մեզ հետ կիսելու մեր գեղեցիկ օրը</p>
+    </div>
+
+    <!-- Church Ceremony -->
+    <div class="invitation">
+      <img src="ekexeci.png" alt="Եկեղեցի" class="icon-img" />
+      <div class="ceremony-title">Պսակադրությունը տեղի կունենա</div>
+      <div class="venue-name">Սաղմոսավանք վանական համալիրում</div>
+      <div class="time">Ժամը՝ 15:00</div>
+      <div class="saghmosavank-addres">Հասցե՝ Արագածոտնի մարզ,<br>գյուղ Սաղմոսավան</div>
+      
+      <a href="https://maps.app.goo.gl/DKao9MqziYz8zvyM6" target="_blank" rel="noopener noreferrer" class="map-link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+        </svg>
+        Տեսնել քարտեզում
+      </a>
+    </div>
+
+    <!-- Divider -->
+    <div class="divider"></div>
+
+    <!-- Reception -->
+    <div class="invitation">
+      <img src="champagne-glasses.png" alt="Հյուրասիրություն" class="icon-img" />
+      <div class="reception-title">Հարսանյաց հանդիսությունը տեղի կունենա</div>
+      <div class="venue-name">"Morena" ռեստորանային համալիրում,</div>
+      <div class="hall-name">"Morena White" սրահում</div>
+      <div class="time">Ժամը՝ 18:00</div>
+      <div class="address">Հասցե՝ ք. Մասիս,<br>Մխիթար Հերացու փող., 7/8</div>
+
+      <a href="https://maps.app.goo.gl/scnD6LF87ZNtmAiW9" target="_blank" rel="noopener noreferrer" class="map-link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+        </svg>
+        Տեսնել քարտեզում
+      </a>
+    </div>
+
+    <!-- Final Photo and Message -->
+    <div class="invitation">
+      <img src="removed-text-2.png" alt="Sahak & Anush" class="full-img" />
+      <div class="closing-text">
+        Սիրով սպասում ենք Ձեզ
+        <svg class="heart-outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#dc143c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.84 4.61c-1.54-1.3-3.77-1.3-5.31 0L12 8.09l-3.53-3.48c-1.54-1.3-3.77-1.3-5.31 0-1.55 1.31-1.55 3.43 0 4.74L12 21.35l8.84-11.99c1.55-1.31 1.55-3.43 0-4.75z"/>
+        </svg>
       </div>
     </div>
   </div>
